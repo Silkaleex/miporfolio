@@ -1,13 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap");
+
+/* mis rutas */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lato", sans-serif, "Open Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.layout {
+  width: 85%;
+  margin: 0px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 132px;
+  border-bottom: 3px solid black;
+  margin-bottom: 35px solid black;
+}
+
+.header .logo {
+  flex-grow: 1;
+  display: flex;
+}
+
+.header .logo span {
+  display: block;
+  font-size: 90px;
+  font-weight: bolder;
+  margin-top: -16px;
+}
+
+.header .logo h3 {
+  display: block;
+  flex-basis: 40px;
+  margin-left: 10px;
+  font-weight: 700;
+  text-transform: upperCase;
+}
+
+.header nav {
+  flex-grow: 1;
+}
+
+.header nav ul {
+  height: 132px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.header li {
+  text-transform: upperCase;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px 16px;
+}
+
+.header li a {
+  color: black;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.header .active {
+  color: #d80032;
+  text-shadow: 1px 1px 1px #000;
+}
+.header a:hover {
+  color: rgb(255, 128, 49);
+  text-shadow: 1px 1px 1px #000;
+}
+
+.content {
+  min-height: 400px;
+}
+footer {
+  text-align: center;
+  min-height: 40px;
+  line-height: 7px;
+  background: #f5f5f5;
+  color: #444;
+  font-size: 14px;
+  margin-top: 80px;
+  padding-top: 45px;
+  border-top: 3px solid black;
+}
+/* inicio */
+.home h1 {
+  font-family: georgia;
+  font-weight: 200;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+.home strong {
+  color: rgb(255, 128, 49);
+  text-shadow: 1px 1px 1px #000;
+}
+.home h2 {
+  color: grey;
+  font-weight: lighter;
+}
+
+.home .titulo a{
+  background-color: rgb(255, 128, 49);
+  color: white;
+  padding: 1% 2%;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #000;
+  transition: all 300ms;
+  margin: 1% 0%;
+}
+.home .titulo a:hover,
+input[type="submit"]:hover,
+button:hover {
+  background-color: rgb(0, 130, 20);
+  transition: all 300ms;
+  cursor: pointer;
+}
+.page .encabezado,
+.home .encabezado {
+  font-size: 40px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  color: #000;
+}
+.page .encabezado {
+  font-size: 55px;
+  font-weight: 500;
+  font-family: georgia;
+}
+
+.home p {
+  color: grey;
+  font-weight: 600;
+}
+input[type="text"],
+textarea {
+  display: block;
+  padding: 15px;
+  width: 250px;
+  margin-top: 20px;
+}
+input[type="submit"],
+button {
+  background-color: rgb(255, 128, 49);
+  color: white;
+  padding: 15px;
+  border: 0px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #000;
+  box-shadow: 1px 1px 1px grey;
+  margin: 1% 0%;
+  cursor: pointer;
+}
+/* trabajos */
+.trabajos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trabajo-icono {
+  width:200px;
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 30px;
+  border:1px solid #eee;
+  padding:2% 2%;
+  background-color:#e9ecef;
+  box-shadow:1px 1px 1px #c9ada7;
+}
+
+.trabajo-icono img{
+  width:100%;
+  transition:all 500ms;
+}
+.enlace-icono{
+  display:flex;
+}
+.icono{
+  margin:0% 5%;
+}
+.trabajo-icono .mascara:hover img{
+  width:101%;
+  margin-right:10%;
+  transition:all 500ms;
+}
+
+.trabajo-icono span{
+color:rgb(47, 45, 45);
+margin-top:25px;
+display:block;
+font-weight:bold;
+}
+
+.trabajo-icono h2{
+ display:block;
+ margin: 1% 0% 4% 0%;
+ font-size:30px;
+ padding:5px 0%;
+ border-bottom:1px solid #aaa;
+}
+
+.trabajo-icono h2 a{
+  text-decoration:none;
+  color:#22223b;
+  font-weight:bold;
+  font-family:georgia;
+  transition:all 300ms;
+}
+
+.trabajo-icono a:hover{
+  text-decoration:none;
+  color:rgb(255, 128, 49);
+  font-weight:bold;
+  font-family:georgia;
+  text-shadow:1px 1px 1px #000;
+}
+.trabajo-icono h3{
+  display:block;
+  color:rgb(97, 97, 97);
+  text-shadow:0px 0px 1px #000;
+  margin-top:0px;
+
+}
+.motivo-contacto{
+  resize:none;
+  height:200px;
+  margin-bottom: 10px;
+}
+/*proyecto*/
+.container{
+  display:flex;
+}
+.page{
+margin-right:50px;
+}
+.buzon-img{
+  width:700px;
+  height:500px;
+  margin-top:80px;
+  box-shadow:0px 0px 20px #eee;
+}
+.page-trabajo .mascaras{
+  height:300px;
+  overflow:hidden;
+  box-shadow:0px 0px 20px #ddd;
+}
+.acceso-enl{
+  text-decoration:none;
+  font-weight:bold;
+  background-color:rgb(255, 128, 49);
+  color:#000;
+  padding:1% 2%;
+  border-radius:5px;
+  text-shadow:1px 1px 1px #ccc
+}
+/* curriculum */
+.sobreMi{
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.experiencia{
+  font-weight:bold;
+  letter-spacing:1px;
+}
+.conocimientos-tecnologicos{
+  display:flex;
+  font-weight:bold;
+}
+.conocimientos1{
+  margin-right:5%
+}
+.conocimientos-tecnologicos li{
+  margin: 5% 0%;
+}
+.educacion{
+  font-weight:bold;
+  letter-spacing:1px;
+}
+.educacion li{
+  margin:1% 0%
+}
+.proyectos-personales{
+  font-weight:bold;
 }
