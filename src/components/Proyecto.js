@@ -15,7 +15,7 @@ export const Proyecto = () => {
   return (
     <>
     <div className="page page-trabajo">
-      <h1 className="encabezado">Proyecto:{paramas.id}</h1>
+      <h1 className="encabezado">{paramas.id}</h1>
         <div className="mascaras">
         <img src={`/images/${proyecto.id}.png`}></img>
         </div>

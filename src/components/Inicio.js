@@ -6,7 +6,7 @@ export const Inicio = () => {
   return (
     <div className="home">
       <h1>
-        Hola, me llamo <strong>Alejandro Pascual</strong>, soy{" "}
+        Hola, me llamo <strong>Alejandro Pascual</strong>, soy
         <strong>Desarrollador web</strong> en Oviedo(Asturias), tengo un amplio
         conocimiento en tecnologías como: MONGODB, EXPRESS, REACT, NODE,
         JAVASCRIPT, ANGULAR, GIT, GITHUB, HTML5, CSS3, BOOTSTRAP, CHACKRA,
@@ -21,7 +21,7 @@ export const Inicio = () => {
       </h2>
       <section className="ultimos-proyectos">
         <h2 className="encabezado">Proyectos realizados</h2>
-        <ListadoTrabajos limite="2"/>
+        <ListadoTrabajos limite="2" />
         {/* limite es una Prop */}
       </section>
     </div>
